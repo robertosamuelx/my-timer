@@ -3,20 +3,18 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "license": "MIT",
-  "dependencies": {
-    "electron": "^8.3.0"
-  },
+  "description": "Este projeto consiste em um cronômetro simples",
+  "author": "Roberto Samuel X",
+  "dependencies": {},
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
-  },
-  "devDependencies": {
-    "electron-builder": "^22.6.0"
+    "dist": "electron-builder --mac"
   },
   "build": {
-    "appId": "robertosamuelx.electron",
-    "produtctName": "my-timer",
+    "appId": "robertosamuelx.electron.my-timer",
+    "productName": "my-timer",
+    "copyright": "Roberto Samuel X",
     "mac": {
       "category": "public.app-category.utils",
       "target": "dmg"
@@ -24,5 +22,9 @@
     "win": {
       "target": "nsis"
     }
+  },
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-builder": "^22.7.0"
   }
 }
